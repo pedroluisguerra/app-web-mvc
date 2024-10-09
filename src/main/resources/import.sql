@@ -1,0 +1,10 @@
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (123456789,"rv@gmail.com","Rafael","Vertamatti");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (125443689,"pm@gmail.com","Petra","Rodriguez");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (569874523,"pj@gmail.com","Pedro","Guerra");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (896523654,"rr@gmail.com","Rafael","Rodríguez");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (852369741,"mg@gmail.com","Maria","Gimenez");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (123456789,"lv@gmail.com","Leonardo","Vertamatti");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (458965231,"sdv@gmail.com","Sara","De Vertamatti");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (582369741,"mv@gmail.com","Maia","Vertamatti");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (859687412,"np@gmail.com","Noé","Prades");
+INSERT INTO empleado(telefono, email, nombre, apellido) VALUES (698532147,"ac@gmail.com","Alex","Calvo");
