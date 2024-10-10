@@ -30,12 +30,12 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 	@Override
 	public Empleado empleadoPorId(long id) {
 		// Método para buscar empleado por id
-		return null;
+		return empleadoRepository.findById(id).get();
 	}
 
 	@Override
 	public void borrarEmpleado(long id) {
-		// TODO Auto-generated method stub		
+		empleadoRepository.deleteById(id);	
 	}
 
 }

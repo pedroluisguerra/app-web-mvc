@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="https://www.thymeleaf.org/">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -7,18 +7,29 @@
 
 </head>
 <body>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page"  th:href="@{/empleados}">Empleados</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" th:href="@{/empleado/new}">Nuevo Empleado</a>
+    </li>
+  
+</ul>
     
     <div class="container">
     <div class="row">
     
     	<table class="table">
-  <thead>
+  <thead class="table-dark">
     <tr>
       <th scope="col">#id</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
       <th scope="col">email</th>
       <th scope="col">telefono</th>
+      <th scope="col">Acciones</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +40,12 @@
       <td th:text="${emp.apellido}"></td>
       <td th:text="${emp.email}"></td>
       <td th:text="${emp.telefono}"></td>
+      <td>
+      
+      <a class="btn btn-info" th:href="@{/empleado/edit/{id}(id=${emp.id})}">Editar</a>
+      <a class="btn btn-danger" th:href="@{/empleado/delete/{id}(id=${emp.id})}" onclick="return confirm('¿Estás seguro?')">Eliminar</a>
+      
+      </td>
            
     </tr>
     
